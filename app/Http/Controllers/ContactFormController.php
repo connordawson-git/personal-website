@@ -28,7 +28,7 @@ class ContactFormController extends Controller
           'user_message' => $request->get('message')
         ), function($message)
         {
-          $message->to('hello@contentdiscovered.com', 'Admin')->subject('Contact Form Query');
+          $message->to('example@email.com', 'Admin')->subject('Contact Form Query');
         });
     return response()->json(null, 200);
   }
