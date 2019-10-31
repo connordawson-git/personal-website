@@ -25,7 +25,9 @@
     <v-toolbar class="mb-2" app >
       <v-toolbar-side-icon class="grey--text hidden-lg-and-up" @click="draw = !draw"></v-toolbar-side-icon>
       <v-toolbar-title class="text-uppercase dark--text">
-        <img src="img/logo.png" alt="">
+        <a href="/">
+          <img src="img/logo.png" alt="">
+        </a>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class=" hidden-md-and-down">

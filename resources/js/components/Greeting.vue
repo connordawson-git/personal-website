@@ -1,5 +1,6 @@
 <template>
-    <section class="hero">
+    <section class="hero" data-aos="zoom-in"
+            data-aos-duration="1000">
             <div class="hero-inner">
                 <h1>Connor Dawson</h1>
                 <h2>Web Developer!</h2>
