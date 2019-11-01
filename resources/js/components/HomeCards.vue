@@ -64,7 +64,7 @@ export default {
 <style scoped>
 .backgroundPattern {
      /* Background styles */
-    background-image: url(https://images.unsplash.com/photo-1461611034385-e082102d5c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background-image: url(https://images.unsplash.com/photo-1461611034385-e082102d5c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

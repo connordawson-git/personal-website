@@ -36,7 +36,7 @@
     /* Text styles */
     text-align: center;
     /* Background styles */
-    background-image: linear-gradient(rgba(241, 232, 232, 0.699), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: linear-gradient(rgba(241, 232, 232, 0.699), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

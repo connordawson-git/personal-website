@@ -12,9 +12,9 @@
         </v-layout >
     </v-container>
     <v-container class="mt-1" grid-list-xl>
-        <v-layout class="card-layout" row align-center>
+        <v-layout class="card-layout" row align-center style="background: rgba(255, 255, 255, 0.3);">
                 <v-flex lg6>
-                    <h1 class="text-center">{{heroName}}</h1>
+                    <h1 class="text-center white--text">{{heroName}}</h1>
                     <div class="healthbar">
                         <div
                             class="healthbar text-center"
@@ -25,7 +25,7 @@
                     </div>
                 </v-flex>
                 <v-flex lg6>
-                    <h1 class="text-center">Monster</h1>
+                    <h1 class="text-center white--text">Monster</h1>
                     <div class="healthbar">
                         <div
                             class="healthbar text-center"
@@ -88,7 +88,7 @@
         </v-layout>
     </v-container>
     <v-container class="mt-1" grid-list-xl>
-        <v-layout class="card-layout" row align-center>
+        <v-layout class="card-layout turns" row align-center>
             <v-flex lg12 class=" log" v-if="turns.length > 0">
                 <ul>
                     <li v-for="turn in turns"
@@ -197,7 +197,11 @@ export default {
 
 <style scoped>
 #GAME {
-    background-color: #f2f2f2!important;
+    background-image: url(https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .heading {
     font-size: 2rem;
@@ -213,7 +217,7 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0px 3px 6px #ccc;
-    background-color: #557a95!important;
+    background: rgba(255, 255, 255, 0.3);
     color: white;
 }
 .text-center {
@@ -229,24 +233,29 @@ input {
 }
 
 .controls, .log {
-    margin-top: 30px;
     text-align: center;
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0px 3px 6px #ccc;
+     background: rgba(255, 255, 255, 0.3);
+}
+
+.turns {
+    background: rgba(255,255,255, 0.3);
 }
 
 .turn {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.3rem;
 }
 
 .log ul {
     list-style: none;
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 0!important;
 }
 
 .log ul li {
