@@ -7,7 +7,11 @@
             </v-flex>
             <v-flex xs12 text-center>
                 <p class="heading">What is your name?</p>
-                <input v-model="heroName" placeholder="edit me">
+                <v-text-field
+                    v-model="heroName"
+                    label="Hero name"
+                    color="white"
+                ></v-text-field>
             </v-flex>
         </v-layout >
     </v-container>
