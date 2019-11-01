@@ -15,6 +15,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="description" content="Quickpack Pro is a professional workflow tool designed for small and medium business looking to revolutionise their manual processes ">
         <title>Connor Dawson</title>
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
         <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">

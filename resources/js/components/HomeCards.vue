@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-5" grid-list-xl>
+  <v-container class="my-5 backgroundPattern" grid-list-xl>
     <v-layout class="card-layout" row justify-space-between wrap align-center>
       <v-flex xs8 md4 lg3>
         <v-card data-aos="fade-up" data-aos-duration="500" class="homeCard text-xs-center elevation-0" height="450px">
@@ -62,8 +62,14 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  max-width: 1600px!important;
+.backgroundPattern {
+     /* Background styles */
+    background-image: url(https://images.unsplash.com/photo-1461611034385-e082102d5c75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
 }
 .font {
   font-family: 'Staatliches', cursive;

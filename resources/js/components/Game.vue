@@ -1,7 +1,7 @@
 <template>
 <div id="GAME">
     <v-container class="mt-1" grid-list-xl>
-        <v-layout class="card-layout" row justify-center wrap align-center>
+        <v-layout class="card-layout game-greeting-block" row justify-center wrap align-center>
             <v-flex xs12 text-center>
                 <h2>Web Development is FUN so with that in mind lets enjoy a game</h2>
             </v-flex>
@@ -40,14 +40,49 @@
     <v-container class="mt-1" grid-list-xl>
         <v-layout class="card-layout" row align-center>
             <v-flex lg12 class=" controls" v-if="!gameIsRunning">
-                <button id="start-game" @click="startGame">START NEW GAME</button>
+                <v-btn
+                color="#aaffb0"
+                large
+                id="start-game" 
+                @click="startGame">
+                    START NEW GAME
+                </v-btn>
             </v-flex>
 
             <v-flex lg12 class=" controls" v-else>
-                <button id="attack" @click="attack">ATTACK</button>
-                <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
-                <button id="heal" @click="heal">HEAL</button>
-                <button id="give-up" @click="giveUp">GIVE UP</button>
+                <v-btn
+                color="#ff7367"
+                large
+                id="attack" 
+                @click="attack">
+                <v-icon>mdi-sword</v-icon>
+                    ATTACK
+                </v-btn>
+                <v-btn
+                color="#ffaf4f"
+                large
+                id="special-attack" 
+                @click="attack">
+                <v-icon>mdi-sword</v-icon>
+                    SPECIAL ATTACK
+                <v-icon>mdi-sword</v-icon>
+                </v-btn>
+                <v-btn
+                color="#aaffb0"
+                large
+                id="heal" 
+                @click="heal">
+                <v-icon>mdi-heart</v-icon>
+                    HEAL
+                </v-btn>
+                <v-btn
+                color="#ffffff"
+                large
+                id="give-up" 
+                @click="giveUp">
+                <v-icon>mdi-run</v-icon>
+                    GIVE UP
+                </v-btn>
             </v-flex>
 
         </v-layout>
@@ -61,17 +96,6 @@
                         {{ turn.text }}
                     </li>
                 </ul>
-            </v-flex>
-        </v-layout>
-    </v-container>
-       <v-container grid-list-xl>
-        <v-layout class="card-layout" row align-center>
-            <v-flex lg12>
-                <v-card  class=" text-xs-center elevation-0">
-                    <v-card-text class="font text-xs-center subheading">
-                        This game was built with Vue Js 2
-                     </v-card-text>
-                </v-card>
             </v-flex>
         </v-layout>
     </v-container>
@@ -183,6 +207,14 @@ h2 {
 }
 input {
     background-color: white;
+    color: black!important;
+}
+.game-greeting-block{
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 6px #ccc;
+    background-color: #557a95!important;
+    color: white;
 }
 .text-center {
     text-align: center;
@@ -231,51 +263,4 @@ input {
     background-color: #ffc0c1;
 }
 
-button {
-    font-size: 20px;
-    background-color: #eee;
-    padding: 12px;
-    box-shadow: 0 1px 1px black;
-    margin: 10px;
-}
-
-#start-game {
-    background-color: #aaffb0;
-}
-
-#start-game:hover {
-    background-color: #76ff7e;
-}
-
-#attack {
-    background-color: #ff7367;
-}
-
-#attack:hover {
-    background-color: #ff3f43;
-}
-
-#special-attack {
-    background-color: #ffaf4f;
-}
-
-#special-attack:hover {
-    background-color: #ff9a2b;
-}
-
-#heal {
-    background-color: #aaffb0;
-}
-
-#heal:hover {
-    background-color: #76ff7e;
-}
-
-#give-up {
-    background-color: #ffffff;
-}
-
-#give-up:hover {
-    background-color: #c7c7c7;
-}
 </style>
