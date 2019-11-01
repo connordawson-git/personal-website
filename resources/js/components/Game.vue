@@ -5,13 +5,13 @@
             <v-flex xs12 text-center>
                 <h2>Web Development is FUN so with that in mind lets enjoy a game</h2>
             </v-flex>
-            <v-flex xs12 text-center>
+            <v-flex xs4 text-center>
                 <p class="heading">What is your name?</p>
-                <v-text-field
-                    v-model="heroName"
-                    label="Hero name"
-                    color="white"
-                ></v-text-field>
+        <v-text-field
+            v-model="heroName"
+            label="Hero name"
+            color="white"
+          ></v-text-field>
             </v-flex>
         </v-layout >
     </v-container>
@@ -164,6 +164,7 @@ export default {
         },
         giveUp: function () {
             this.gameIsRunning = false;
+            this.turns = [];
         },
         monsterAttacks: function() {
             var damage = this.calculateDamage(5, 12);
@@ -183,6 +184,7 @@ export default {
                     this.startGame();
                 } else {
                     this.gameIsRunning = false;
+                    this.turns = [];
                 }
                 return true;
             } else if (this.playerHealth <= 0) {
